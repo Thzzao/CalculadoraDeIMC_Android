@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">IMC</string>
+    <string name="calcular_seu_imc_button">Calcular seu IMC</string>
+    <string name="voltar_button">Voltar</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonCalcularIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcularImcButtonOnClick"
+        android:text="@string/calcular_seu_imc_button"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pesoo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="410dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="-10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/imc_faixa" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="351dp"
+        android:layout_height="36dp"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/altura"
+        android:layout_width="351dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="altura"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/pesoo"
+        android:layout_width="351dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="peso"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalcularIMC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:text="Digite sua altura (metros)"
+        app:layout_constraintBottom_toTopOf="@+id/altura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:text="Digite seu peso (Kg)"
+        app:layout_constraintBottom_toTopOf="@+id/pesoo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/altura" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:text="Seu IMC é igual a:"
+        app:layout_constraintBottom_toTopOf="@+id/result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCalcularIMC" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Compare seu IMC com a tabela abaixo:"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
